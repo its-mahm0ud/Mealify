@@ -1,0 +1,44 @@
+
+@import "tailwindcss";
+@plugin "daisyui";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@custom-variant dark (&:where(.dark, .dark *));
+@layer utilities{
+    .container{
+        @apply mx-auto;
+    }
+}
+@layer base{
+    h1{
+        @apply text-[55px]
+    }
+    a{
+        @apply cursor-pointer;
+    }   
+    button{
+        @apply cursor-pointer
+    }
+}
+@theme{
+    --color-bgHover:   #E61414;
+    --color-colorPrimary: #EEEEEE;
+    --color-pharagraph: #4f4f5a;
+    --color-headingH1: #37373f;
+    --color-bgAll: #CE1212;
+    --color-headOfSection: #212529;
+    --color-ancor: #7f7f90;
+    --color-bgSections: #FFFFFF;
+    --color-bgInDark: #202020;
+    --color-colorInDark: #D78C23;
+    --color-colorHoverDark: #D98C30;
+    --color-bgheroDark: #252525;
+    --color-tInDark:#E9F4FF;
+    --color-cardsInDark: #171717;
+    --color-layout: #00000096;
+    --color-bghoverancor: #222222;
+    --font-fontOfHeadings: "Amatic SC", sans-serif;
+}
+
+
